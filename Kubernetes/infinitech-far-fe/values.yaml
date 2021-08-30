@@ -47,10 +47,10 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: infinitech-far-fe-richardmproject.ida.dcs.gla.ac.uk
-      paths:
+    - paths:
         - path: /
           pathType: ImplementationSpecific
+      #host: <Enter the hostname for external access to the jupyter server>
   tls: []
 
 resources: {}
