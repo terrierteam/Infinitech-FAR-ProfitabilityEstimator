@@ -1,4 +1,3 @@
-
 FROM python:3.8-slim-buster
 
 EXPOSE 8888
@@ -22,3 +21,4 @@ COPY iPythonNotebooks/FinancialAssetProfitabilityPrediction.ipynb /tmp/iPythonNo
 WORKDIR /tmp/iPythonNotebooks
 
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root", "--NotebookApp.token=''", "--notebook-dir='/tmp/iPythonNotebooks/'"]
+
