@@ -17,6 +17,7 @@ RUN python -m pip install -r requirements.txt
 RUN python -m pip install jupyter
 
 COPY iPythonNotebooks/FinancialAssetProfitabilityPrediction.ipynb /tmp/iPythonNotebooks/
+COPY iPythonNotebooks/app.py /tmp/iPythonNotebooks/
 
 WORKDIR /tmp/iPythonNotebooks
 
